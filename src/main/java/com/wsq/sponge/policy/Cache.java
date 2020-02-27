@@ -15,7 +15,6 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Cache extends Sponge {
     private final ReferenceQueue queue = new ReferenceQueue();
-
     private Map<Integer, Entry> repository = new ConcurrentHashMap<>();
 
     public void set(String key, Object value) {
